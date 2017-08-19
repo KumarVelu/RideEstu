@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">RideEstu</string>
+
+    <!--error message-->
+    <string name="error_default">Oops, Something went wrong. Please try again later</string>
+
+    <string name="pref_is_signed_in">is_signed_in</string>
 </resources>
