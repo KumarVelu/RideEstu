@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "198829339237",
+    "project_id": "rideestu-1503144322606"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:198829339237:android:6f3b4d83942b52f7",
+        "android_client_info": {
+          "package_name": "com.udacity.velu.rideestu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "198829339237-m9fancg8ld9dre4mir4dsnmlkr5a3jhi.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "198829339237-5rlch1t29nh53f2p9fipt5tubt69lo4f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.udacity.velu.rideestu",
+            "certificate_hash": "f87e347554b7d534f58fb44f1008d0b945808dbd"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBC_7Fmkr94MD3d-783dnQYx-iEdcVDwJE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
