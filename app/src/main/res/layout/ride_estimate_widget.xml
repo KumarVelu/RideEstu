@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/colorPrimary"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/from_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="From - R.T.Nagar"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:layout_marginLeft="16dp"/>
+
+    <TextView
+        android:id="@+id/to_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="To - Yelhanka"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"/>
+
+    <ListView
+        android:id="@+id/estimate_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"/>
+
+    <TextView
+        android:id="@+id/empty_widget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/error_widget_no_data"
+        android:visibility="gone"
+        android:layout_marginLeft="4dp"
+        android:padding="8dp"/>
+
+</LinearLayout>

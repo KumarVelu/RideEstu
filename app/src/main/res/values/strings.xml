@@ -1,8 +1,24 @@
 <resources>
     <string name="app_name">RideEstu</string>
 
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="estimate">Estimate</string>
+    <string name="bookmarked">Bookmarked</string>
+
+    <string name="content_authority">com.udacity.velu.rideestu</string>
+    <string name="widget_from_loc">From - %1$s</string>
+    <string name="widget_to_loc">To - %1$s</string>
+
     <!--error message-->
     <string name="error_default">Oops, Something went wrong. Please try again later</string>
+    <string name="error_enter_from">Please enter From location</string>
+    <string name="error_to_location">Please enter To Location</string>
+    <string name="error_no_internet">No Internet Connection.</string>
+    <string name="error_no_cab_available">No Cab available for the specified soruce to destination</string>
+    <string name="error_widget_no_data">No Details available.</string>
 
     <string name="pref_is_signed_in">is_signed_in</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
 </resources>
