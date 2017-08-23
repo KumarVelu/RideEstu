@@ -13,11 +13,22 @@
     tools:context="com.udacity.velu.rideestu.ui.HomeActivity">
 
     <TextView
+        android:id="@+id/display_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/listPreferredItemHeight"
+        tools:text="Hello!, Sachin"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center_vertical"/>
+
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/from"
         android:textSize="18sp"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"/>
 
     <EditText
         android:id="@+id/from_text"

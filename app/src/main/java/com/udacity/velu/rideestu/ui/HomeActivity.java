@@ -2,10 +2,12 @@ package com.udacity.velu.rideestu.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.common.GooglePlayServicesNotAvailableException;
@@ -28,6 +30,8 @@ public class HomeActivity extends BaseActivity {
     EditText mFromText;
     @BindView(R.id.to_text)
     EditText mToText;
+    @BindView(R.id.display_name)
+    TextView mDisplayName;
 
     private static final int RC_PLACE_AUTOCOMPLETE = 201;
     private boolean mFromClicked;
@@ -44,6 +48,12 @@ public class HomeActivity extends BaseActivity {
     }
 
     private void initializeUi() {
+
+        String displayName = PreferenceManager.getDefaultSharedPreferences(this)
+                .getString(getString(R.string.pref_display_name), "");
+        String greetMsg = String.format(getString(R.string.hello_msg), displayName);
+        mDisplayName.setText(greetMsg);
+
         mRideRequest = new RideRequest();
         mFromText.setOnClickListener(new View.OnClickListener() {
             @Override

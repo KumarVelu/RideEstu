@@ -42,6 +42,7 @@
         android:src="@drawable/ic_star"
         android:layout_gravity="bottom|end"
         android:layout_margin="32dp"
-        android:clickable="true"/>
+        android:clickable="true"
+        android:contentDescription="@string/bookmark_fab_cd"/>
 
 </android.support.design.widget.CoordinatorLayout>

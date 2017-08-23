@@ -5,6 +5,7 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.annotation.NonNull;
+import android.util.Log;
 import android.view.View;
 
 import com.google.android.gms.auth.api.Auth;
@@ -81,8 +82,10 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener,
 
     private void handleSignInResult(GoogleSignInResult result) {
         if(result.isSuccess()){
+            Log.i(TAG, "handleSignInResult: " + result.getSignInAccount().getDisplayName());
             SharedPreferences.Editor spe = PreferenceManager.getDefaultSharedPreferences(this).edit();
             spe.putBoolean(getString(R.string.pref_is_signed_in), true).apply();
+            spe.putString(getString(R.string.pref_display_name), result.getSignInAccount().getDisplayName()).apply();
 
             startActivity(new Intent(this, HomeActivity.class));
 
